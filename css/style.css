@@ -15,8 +15,18 @@ main {
     width: 100%;
 }
 
+.ErrorMessage{
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
 .page-title {
-    margin: 30px 50px 50px 50px;
+    margin: 50px 50px 50px 50px;
     font-size: 30px;
     color: #1b11e4;
 }
@@ -33,7 +43,7 @@ main {
     padding: 20px;
     height: 100px;
     width: 400px;
-    border: 1px solid #000000;
+    border: 1px solid grey;
     text-align: left;
     background-color: #fff;
 }

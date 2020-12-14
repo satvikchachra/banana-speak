@@ -6,7 +6,20 @@ const serverURL = 'https://api.funtranslations.com/translate/minion.json';
 
 const getTranslationURL = inputText => serverURL + '?' + 'text=' + inputText;
 
-const errorHandler = err => console.log('Error: ', err);
+const errorHandler = async (err) => {
+    let msgElement = document.createElement('div');
+    msgElement.className = 'ErrorMessage';
+    const textNode = document.createTextNode('Error Message ' + err);
+    msgElement.appendChild(textNode);
+    const bodyElement = document.querySelector('body');
+    const titleElement = document.querySelector('.page-title');
+    bodyElement.insertBefore(msgElement, titleElement);
+
+    setTimeout(() => {
+        document.querySelector('.ErrorMessage').remove();
+    }, 3000);
+    console.log('Error: ', err);
+}
 
 const translateHandler = () => {
     const ipText = txtareaInput.value;
