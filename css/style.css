@@ -15,7 +15,16 @@ main {
     width: 100%;
 }
 
-.ErrorMessage{
+.minion-container {
+    margin-bottom: 20px;
+}
+
+.minion-container img {
+    border-radius: 10%;
+    border: 1px solid #000000;
+}
+
+.ErrorMessage {
     background-color: red;
     color: #fff;
     text-align: center;
@@ -26,7 +35,7 @@ main {
 }
 
 .page-title {
-    margin: 50px 50px 50px 50px;
+    margin: 50px 50px 30px 50px;
     font-size: 30px;
     color: #1b11e4;
 }
@@ -34,24 +43,27 @@ main {
 #txt-input {
     margin: 0 0 30px 0;
     padding: 20px;
-    height: 100px;
+    height: 80px;
     width: 400px;
+    border-radius: 10px;
 }
 
 #txt-output {
     margin: 30px 0;
     padding: 20px;
-    height: 100px;
+    height: 80px;
     width: 400px;
     border: 1px solid grey;
     text-align: left;
     background-color: #fff;
+    border-radius: 10px;
 }
 
 #btn-translate {
     background-color: #1b11e4;
-    height: 30px;
-    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    width: 120px;
     color: #fff;
 }
 
